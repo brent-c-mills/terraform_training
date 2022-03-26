@@ -7,9 +7,9 @@ resource "random_id" "instance_id_0001" {
 
 # Generate a compute engine instance
 resource "google_compute_instance" "default_instance" {
-  name         = "brents-vm-${random_id.instance_id_0001.hex}"
-  machine_type = "e2-micro"
-  zone         = "us-east1-b"
+  name         = "${var.compute_name_stem}-${random_id.instance_id_0001.hex}"
+  machine_type = "${var.compute_type}"
+  zone         = "${var.gcp_zone}"
 
   boot_disk {
     initialize_params {
