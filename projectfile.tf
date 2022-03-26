@@ -13,7 +13,7 @@ resource "google_compute_instance" "default_instance" {
 
   boot_disk {
     initialize_params {
-      image = "CentOS/CentOS Stream 8"
+      image = "centos-cloud/centos-stream-8"
     }
   }
 
