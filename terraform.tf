@@ -1,7 +1,7 @@
 #Terraform provider declarations
 
 provider "google" {
-  credentials = file("argon-potential-319121-3064c628d625.json")
-  project     = "argon-potential-319121"
-  region      = "us-east1" 
+  credentials = file("${var.gcp_creds_file}")
+  project     = "${var.gcp_project}"
+  region      = "${var.gcp_region}"
 }
