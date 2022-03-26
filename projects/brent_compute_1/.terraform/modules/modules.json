@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"my_first_compute","Source":"git::ssh://git@github.com/kaizoku0506/terraform-module-training.git?ref=v0.1.0","Dir":".terraform/modules/my_first_compute"}]}
